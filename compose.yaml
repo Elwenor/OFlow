@@ -1,0 +1,16 @@
+services:
+  oflow:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      OFLOW_ALPHA_API_KEY: ${OFLOW_ALPHA_API_KEY:?Set a random secret with at least 32 characters}
+      OFLOW_BETA_API_KEY: ${OFLOW_BETA_API_KEY:?Set a different random secret with at least 32 characters}
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    stop_grace_period: 75s
