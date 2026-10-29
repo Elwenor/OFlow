@@ -1,0 +1,13 @@
+schema_version: "1"
+trusted_plugin_allowlist: [demo]
+plugins:
+  - name: demo
+    version: "0.1"
+    entry_point: examples.custom_plugin:register
+    capabilities: [uppercase]
+backends:
+  - id: uppercase
+    kind: uppercase
+routing:
+  rules:
+    demo.uppercase: [uppercase]

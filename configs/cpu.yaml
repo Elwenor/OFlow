@@ -1,0 +1,22 @@
+schema_version: "1"
+scheduler:
+  queue_limit: 128
+  max_inflight: 32
+  history_limit: 128
+  max_request_seconds: 60
+devices:
+  - id: cpu
+    max_concurrency: 4
+backends:
+  - id: cpu
+    kind: cpu
+    concurrency: 2
+  - id: mock
+    kind: mock
+    options:
+      score: 0.5
+routing:
+  rules:
+    text.score: [cpu, mock]
+    math.statistics: [cpu]
+    test.echo: [mock]
