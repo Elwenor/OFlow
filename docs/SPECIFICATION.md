@@ -1,5 +1,7 @@
 # OFLOW 1.0-BETA — FINAL ENGINEERING SPECIFICATION
 
+> Historical design input. The subsequent owner decision removes the experimental source archive, model-specific compatibility adapter and associated tests/configuration. Those migration requirements below are superseded; CPU, single-GPU and multi-GPU remain supported deployment targets. Current behavior is documented in README.md and GPU.md.
+
 ## ROLE AND MISSION
 
 You are the lead architect and implementation engineer responsible for transforming the provided OFlow experimental code into OFlow 1.0-beta.

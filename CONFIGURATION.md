@@ -4,7 +4,7 @@
 
 Precedence: built-in defaults < YAML < explicit top-level keyword overrides in load_config/from_config. Overrides replace whole top-level sections. `oflow serve --host/--port` overrides the API bind address after validation. Secrets are read from named environment variables at API/HTTP-backend startup. OFLOW_CONFIG chooses the config for the Uvicorn factory.
 
-All models reject unknown fields. schema_version and public task/API schema versions are strings "1". Relative legacy asset and SQLite paths resolve against the process working directory; start from the project directory or configure absolute paths.
+All models reject unknown fields. schema_version and public task/API schema versions are strings "1". Relative SQLite and operator-defined backend paths resolve against the process working directory; start from the project directory or configure absolute paths.
 
 | Section | Main settings |
 |---|---|
@@ -51,7 +51,7 @@ The default global queue holds 128 requests; 32 requests may be physically in fl
 
 CPU visibility and slots work without torch. RAM discovery uses optional psutil; absent discovery and absent a configured memory cap, RAM memory accounting has no physical upper bound. Concurrency and queues are still bounded. GPU workers require a positive explicit model-memory budget. request_memory_mb is peak additional memory for a whole backend invocation, including its batch. Set conservative budgets and cap batches before loading large models.
 
-Use [configs/multi_gpu.yaml](configs/multi_gpu.yaml) for two independently placed optional PyTorch toy workers. A missing GPU leaves that worker unavailable while compatible CPU tasks continue. No weights are automatically duplicated except the backend entries explicitly configured by the operator.
+Use [configs/gpu.yaml](configs/gpu.yaml) for one GPU or [configs/multi_gpu.yaml](configs/multi_gpu.yaml) for two independently placed optional PyTorch demonstration workers. A missing GPU leaves that worker unavailable while compatible CPU tasks continue. An unavailable text.embed request fails; it does not silently become a CPU request. GPU examples exit with an error when the requested device cannot execute. No weights are automatically duplicated except the backend entries explicitly configured by the operator.
 
 ## Runtime updates
 

@@ -13,7 +13,7 @@ The local SDK is a trusted same-process boundary. A local Python caller can conf
 - Logs/audit contain IDs, task/backend/profile, timings, status and error category, not inputs/outputs or keys.
 - No HTTP plugin installation, arbitrary module/file loader, URL selection, automatic download or checkpoint selection.
 - Fixed operator-configured HTTP destinations, bounded responses, disabled redirects/environment proxies, HTTPS by default.
-- New checkpoint inspection uses explicit weights_only=True; PyTorch >=2.10 is required for that inspection. Only trusted checkpoints and external loaders are supported.
+- No built-in checkpoint/file loader is exposed. Production backend plugins own model loading and must use trusted artifacts and maintained runtimes.
 
 ## Required deployment assumptions
 
@@ -25,7 +25,7 @@ The beta API-key mechanism has no built-in key expiry, remote key rotation, per-
 
 Trusted Python plugins run in process with its full privileges. A thread is not a sandbox. Segmentation faults, process termination, hanging native code, hard CPU/RAM/VRAM isolation and protection between malicious plugins require external process/container controls. Memory reservations are estimates; external GPU allocations and inaccurate batch budgets can still cause OOM. Cancellation cannot kill arbitrary code or a CUDA kernel safely.
 
-Only the new adapter's code is hardened here; the archived experimental file retains its original unsafe loading and other risks and must not be exposed as a service. The external selector/pipeline loaders are missing from this repository and must be audited by their operator. An initial safe metadata probe does not make a later external loader safe. See [MIGRATION.md](MIGRATION.md).
+The standalone experimental script and its model-specific compatibility adapter are removed from the current package. Any external plugin supplying model/checkpoint loading remains trusted code and must be audited by its operator. See [MIGRATION.md](MIGRATION.md).
 
 Even restricted checkpoint loading has limitations; follow [PyTorch serialization guidance](https://docs.pytorch.org/docs/stable/notes/serialization) and keep the runtime patched. API keys are not plugin or checkpoint trust signatures.
 

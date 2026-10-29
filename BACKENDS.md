@@ -6,9 +6,10 @@
 | mock | test.echo, text.score (configured constant) | Base installation | Implemented and tested; synthetic only |
 | http | Operator-selected registered tasks | .[http] | Implemented; local-server integration tested |
 | torch_embed | text.embed | .[torch] | Working optional byte-embedding demonstration; random untrained weights |
-| legacy plugin | legacy.semantic (ORIS/mmBERT) | Torch + original selector/pipeline/tokenizer/checkpoint | Experimental; real-model acceptance pending |
 
 Backends declare stable IDs and versions, task schemas, runtime, resource requirements, concurrency, batching and streaming support. A backend's task declaration must exactly match the task registry. Lifecycle is initialize → execute/execute_batch → shutdown; health reports availability. The scheduler does not load model weights per request.
+
+The torch_embed backend places persistent weights and input tensors on its configured cpu/cuda:N device and copies normalized results to CPU. It supports independent GPU workers, not tensor-parallel execution of one model. The included weights are untrained. Other model families and runtimes need their own trusted backend implementation; the scheduler does not make a CPU-only backend GPU-capable automatically. See [GPU.md](GPU.md).
 
 Optional capabilities are separate Protocols: BatchBackend.execute_batch returns one result per request in input order; CostBackend.estimate_cost returns a cheap positive workload estimate. Backends must be thread-safe at their declared concurrency. Model-specific semantics, tokenization and geometry never belong in Core.
 

@@ -7,7 +7,7 @@ Versioned task contracts; strict YAML; shared SDK/API services; bounded queues/p
 ## Next stage: hardware and production-model acceptance
 
 1. Run optional CUDA tests on one and multiple physical GPUs, measuring allocated/reserved VRAM and pinned-memory high-water marks during long workloads and failures.
-2. Supply original ORIS/mmBERT selector/pipeline/checkpoints; generate independent reference fixtures and gate labels, geometry, truncation and precision.
+2. Add a production model/runtime backend through the general contract, with independent reference fixtures for its outputs, batching, precision and memory behavior. Do not restore model-specific experiment code to Core.
 3. Measure real latency/throughput/queue tradeoffs across candidate batch/token-window/padding settings with repeated, randomized, correctness-gated runs.
 4. Validate Docker build/runtime and full configured CI matrix; pin tested dependency sets for supported deployments.
 5. Add explicit process-isolated workers and hard termination before serving untrusted workloads or requiring bounded shutdown despite hung native code.

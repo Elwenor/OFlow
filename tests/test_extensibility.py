@@ -1,4 +1,5 @@
 import asyncio
+import importlib.util
 import json
 import sqlite3
 import sys
@@ -12,6 +13,13 @@ from oflow.config import EngineConfig
 from oflow.contracts import Contract, ResourceRequirements
 from oflow.registry import TaskRegistry
 from oflow.resources import Device
+
+
+def test_model_specific_compatibility_package_and_task_are_removed():
+    assert importlib.util.find_spec("oflow.legacy") is None
+    engine = OFlowEngine()
+    assert "legacy.semantic" not in engine.tasks.definitions
+    assert all(not name.startswith("legacy") for name in engine.registry.backends)
 
 
 def test_trusted_plugin_adds_new_task_without_scheduler_changes(monkeypatch):

@@ -26,3 +26,16 @@ routing:
   rules:
     text.embed: [embeddings-gpu0, embeddings-gpu1]
     text.score: [cpu]
+tenants:
+  - id: alpha
+    api_key_env: OFLOW_ALPHA_API_KEY
+    concurrency_limit: 4
+    queue_limit: 16
+    max_priority: 20
+    admin: true
+  - id: beta
+    api_key_env: OFLOW_BETA_API_KEY
+    concurrency_limit: 2
+    queue_limit: 8
+    tasks: [text.embed, text.score]
+    backends: [embeddings-gpu0, embeddings-gpu1, cpu]

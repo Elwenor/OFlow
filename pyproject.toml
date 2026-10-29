@@ -30,7 +30,7 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-markers = ["cuda: optional physical CUDA validation", "legacy: requires original selector, pipeline and checkpoint"]
+markers = ["cuda: requires a physical CUDA GPU", "multi_gpu: requires at least two physical CUDA GPUs"]
 
 [tool.ruff]
 line-length = 100

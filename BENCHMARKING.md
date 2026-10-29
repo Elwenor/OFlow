@@ -14,16 +14,16 @@ The committed [CPU benchmark](reports/cpu-scheduler-windows.json) measured Windo
 
 | Scenario | Median requests/s | Median per-run p95 latency |
 |---|---:|---:|
-| Single interactive | 62.5 | 16 ms |
-| Multiple interactive | 127.0 | 63 ms |
-| Bulk | 124.8 | 125 ms |
-| Mixed | 104.6 | 120 ms |
-| Failures | 128.5 | 63 ms |
-| Deadlines | 266.7 | 16 ms |
-| Repeated memory | 114.2 | 94 ms |
+| Single interactive | 60.8 | 16 ms |
+| Multiple interactive | 118.0 | 94 ms |
+| Bulk | 113.1 | 203 ms |
+| Mixed | 122.5 | 79 ms |
+| Failures | 127.1 | 63 ms |
+| Deadlines | 268.4 | 16 ms |
+| Repeated memory | 125.1 | 63 ms |
 
-Peak traced Python allocations were approximately 322–578 KiB per run. Deadline polling can overshoot a 1 ms deadline on this host; the report records terminal timeout handling, not 1 ms real-time compliance.
+Peak traced Python allocations were approximately 323–579 KiB per run. Deadline polling can overshoot a 1 ms deadline on this host; the report records terminal timeout handling, not 1 ms real-time compliance.
 
 The generic autotune helper requires at least one warmup, three measured repetitions and explicit environment metadata. It shuffles candidates, compares every warmup/measured output against the reference, and excludes a candidate if any comparison or execution fails. No equivalent candidate means winner=null. Full structure, labels and exact integers/booleans are checked; finite floats use absolute plus relative tolerance. It does not automatically apply results to a different environment.
 
-For an actual model, include model/checkpoint revision, tokenizer, hardware UUID/driver/runtime, precision, shapes, memory, workload and configuration in environment metadata; synchronize accelerator timing within candidate functions. Use independent selector reference fixtures where available. Default batch sizes and efficiency thresholds are starting points, not universal optima.
+For an actual model, include model/checkpoint revision, tokenizer, hardware UUID/driver/runtime, precision, shapes, memory, workload and configuration in environment metadata; synchronize accelerator timing within candidate functions. Use independent model/reference fixtures where available. Default batch sizes and efficiency thresholds are starting points, not universal optima.

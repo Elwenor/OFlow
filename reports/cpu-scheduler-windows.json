@@ -8,7 +8,7 @@
     "backend": "deterministic_mock",
     "model_version": "none",
     "runtime": "thread",
-    "source_tree_sha256": "69940e1531bf4bef7e6cf74ac624d6c49a98703f2157f1bf0db5b51c7f334e41"
+    "source_tree_sha256": "22eb46a9a3b548951da491b504c9ef53c4d9ba418b3d172666bc95cb769bf6b5"
   },
   "items_per_run": 128,
   "warmups": 1,
@@ -107,15 +107,15 @@
         "trusted_plugin_allowlist": []
       },
       "correct": true,
-      "seconds": 1.6534866001456976,
-      "requests_per_second": 77.41217859807345,
-      "completed_per_second": 77.41217859807345,
-      "latency_p50_ms": 108.99999993853271,
-      "latency_p95_ms": 125.0,
-      "latency_p99_ms": 140.73000008007511,
-      "queue_p95_ms": 94.0000000409782,
-      "python_retained_bytes": 334607,
-      "python_peak_bytes": 372693,
+      "seconds": 1.0446037000510842,
+      "requests_per_second": 122.53450757808002,
+      "completed_per_second": 122.53450757808002,
+      "latency_p50_ms": 62.99999984912574,
+      "latency_p95_ms": 78.99999991059303,
+      "latency_p99_ms": 104.94999996619305,
+      "queue_p95_ms": 63.00000008195639,
+      "python_retained_bytes": 332919,
+      "python_peak_bytes": 369733,
       "status_counts": {
         "COMPLETED": 128
       },
@@ -124,7 +124,7 @@
           "id": "cpu",
           "identity": "host-cpu",
           "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19659,
+          "memory_mb": 19229,
           "max_concurrency": 4,
           "healthy": true,
           "cuda_capability": null,
@@ -226,15 +226,15 @@
         "trusted_plugin_allowlist": []
       },
       "correct": true,
-      "seconds": 1.121221800101921,
-      "requests_per_second": 114.16117666314068,
-      "completed_per_second": 114.16117666314068,
+      "seconds": 1.0255291000939906,
+      "requests_per_second": 124.81362058694258,
+      "completed_per_second": 124.81362058694258,
       "latency_p50_ms": 62.99999984912574,
-      "latency_p95_ms": 94.0000000409782,
-      "latency_p99_ms": 110.00000010244548,
-      "queue_p95_ms": 77.9999999795109,
-      "python_retained_bytes": 336063,
-      "python_peak_bytes": 379445,
+      "latency_p95_ms": 63.00000008195639,
+      "latency_p99_ms": 89.68000008724636,
+      "queue_p95_ms": 47.0000000204891,
+      "python_retained_bytes": 335943,
+      "python_peak_bytes": 372669,
       "status_counts": {
         "COMPLETED": 128
       },
@@ -243,7 +243,7 @@
           "id": "cpu",
           "identity": "host-cpu",
           "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19556,
+          "memory_mb": 19516,
           "max_concurrency": 4,
           "healthy": true,
           "cuda_capability": null,
@@ -345,15 +345,15 @@
         "trusted_plugin_allowlist": []
       },
       "correct": true,
-      "seconds": 1.1498986999504268,
-      "requests_per_second": 111.31415315585468,
-      "completed_per_second": 111.31415315585468,
+      "seconds": 1.1317129998933524,
+      "requests_per_second": 113.10288033455669,
+      "completed_per_second": 113.10288033455669,
       "latency_p50_ms": 125.0,
-      "latency_p95_ms": 203.99999991059303,
-      "latency_p99_ms": 234.00000010849908,
-      "queue_p95_ms": 187.99999984912574,
-      "python_retained_bytes": 344831,
-      "python_peak_bytes": 407045,
+      "latency_p95_ms": 202.9999999795109,
+      "latency_p99_ms": 214.67999991727999,
+      "queue_p95_ms": 172.0000000204891,
+      "python_retained_bytes": 332607,
+      "python_peak_bytes": 395077,
       "status_counts": {
         "COMPLETED": 128
       },
@@ -362,7 +362,7 @@
           "id": "cpu",
           "identity": "host-cpu",
           "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19586,
+          "memory_mb": 19560,
           "max_concurrency": 4,
           "healthy": true,
           "cuda_capability": null,
@@ -464,15 +464,15 @@
         "trusted_plugin_allowlist": []
       },
       "correct": true,
-      "seconds": 0.9940148000605404,
-      "requests_per_second": 128.7707184965497,
+      "seconds": 1.0088577000424266,
+      "requests_per_second": 126.87616895288312,
       "completed_per_second": 0.0,
       "latency_p50_ms": 62.00000015087426,
       "latency_p95_ms": 63.00000008195639,
       "latency_p99_ms": 63.00000008195639,
       "queue_p95_ms": 47.0000000204891,
-      "python_retained_bytes": 544660,
-      "python_peak_bytes": 591709,
+      "python_retained_bytes": 545572,
+      "python_peak_bytes": 592389,
       "status_counts": {
         "FAILED": 128
       },
@@ -481,7 +481,7 @@
           "id": "cpu",
           "identity": "host-cpu",
           "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19590,
+          "memory_mb": 19561,
           "max_concurrency": 4,
           "healthy": true,
           "cuda_capability": null,
@@ -583,15 +583,15 @@
         "trusted_plugin_allowlist": []
       },
       "correct": true,
-      "seconds": 1.991897099884227,
-      "requests_per_second": 64.26034758895909,
-      "completed_per_second": 64.26034758895909,
+      "seconds": 2.023306699935347,
+      "requests_per_second": 63.26277672292102,
+      "completed_per_second": 63.26277672292102,
       "latency_p50_ms": 15.999999828636646,
       "latency_p95_ms": 16.00000006146729,
-      "latency_p99_ms": 16.00000006146729,
+      "latency_p99_ms": 26.949999986682148,
       "queue_p95_ms": 0.0,
-      "python_retained_bytes": 327179,
-      "python_peak_bytes": 336356,
+      "python_retained_bytes": 322377,
+      "python_peak_bytes": 330282,
       "status_counts": {
         "COMPLETED": 128
       },
@@ -600,7 +600,7 @@
           "id": "cpu",
           "identity": "host-cpu",
           "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19590,
+          "memory_mb": 19563,
           "max_concurrency": 4,
           "healthy": true,
           "cuda_capability": null,
@@ -702,136 +702,17 @@
         "trusted_plugin_allowlist": []
       },
       "correct": true,
-      "seconds": 0.5830979000311345,
-      "requests_per_second": 219.51716854608026,
+      "seconds": 0.5224470000248402,
+      "requests_per_second": 245.00092831218117,
       "completed_per_second": 0.0,
       "latency_p50_ms": 15.999999828636646,
-      "latency_p95_ms": 30.999999959021807,
-      "latency_p99_ms": 30.999999959021807,
+      "latency_p95_ms": 16.00000006146729,
+      "latency_p99_ms": 16.00000006146729,
       "queue_p95_ms": 16.00000006146729,
-      "python_retained_bytes": 498120,
-      "python_peak_bytes": 539761,
+      "python_retained_bytes": 457508,
+      "python_peak_bytes": 470954,
       "status_counts": {
         "TIMED_OUT": 128
-      },
-      "devices": [
-        {
-          "id": "cpu",
-          "identity": "host-cpu",
-          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19546,
-          "max_concurrency": 4,
-          "healthy": true,
-          "cuda_capability": null,
-          "runtime": "python",
-          "reserved_memory_mb": 0,
-          "active": 2
-        }
-      ]
-    },
-    {
-      "scenario": {
-        "name": "B_multiple_interactive",
-        "clients": 8,
-        "profile": "latency_first",
-        "fail": false,
-        "deadline": false,
-        "mixed": false
-      },
-      "repeat": 1,
-      "configuration": {
-        "schema_version": "1",
-        "scheduler": {
-          "queue_limit": 128,
-          "max_inflight": 32,
-          "history_limit": 8,
-          "history_ttl_seconds": 300.0,
-          "poll_seconds": 0.01,
-          "aging_seconds": 0.1,
-          "max_request_seconds": 60.0,
-          "shutdown_grace_seconds": 10.0,
-          "max_input_bytes": 1048576,
-          "max_output_bytes": 1048576
-        },
-        "devices": [
-          {
-            "id": "cpu",
-            "memory_mb": null,
-            "max_concurrency": 4
-          }
-        ],
-        "backends": [
-          {
-            "id": "synthetic",
-            "kind": "mock",
-            "device": "cpu",
-            "concurrency": 2,
-            "model_memory_mb": 0,
-            "request_memory_mb": 0,
-            "max_restarts": 1,
-            "options": {
-              "delay_seconds": 0.001,
-              "fail": false
-            }
-          }
-        ],
-        "profiles": {
-          "latency_first": {
-            "name": "latency_first",
-            "max_batch_size": 1,
-            "batch_delay_ms": 0.0,
-            "cost_budget": 16384,
-            "priority_boost": 20
-          },
-          "balanced": {
-            "name": "balanced",
-            "max_batch_size": 4,
-            "batch_delay_ms": 2.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          },
-          "throughput_first": {
-            "name": "throughput_first",
-            "max_batch_size": 16,
-            "batch_delay_ms": 5.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          }
-        },
-        "routing": {
-          "rules": {}
-        },
-        "tenants": [],
-        "api": {
-          "host": "127.0.0.1",
-          "port": 8000,
-          "max_body_bytes": 1048576,
-          "max_concurrent_requests": 64,
-          "max_batch_tasks": 64,
-          "request_timeout_seconds": 65.0,
-          "docs_enabled": false
-        },
-        "telemetry": {
-          "structured_logs": false,
-          "tracing": false,
-          "metadata_sqlite": null,
-          "audit_retention": 10000
-        },
-        "plugins": [],
-        "trusted_plugin_allowlist": []
-      },
-      "correct": true,
-      "seconds": 1.232631699880585,
-      "requests_per_second": 103.84285915444198,
-      "completed_per_second": 103.84285915444198,
-      "latency_p50_ms": 62.99999984912574,
-      "latency_p95_ms": 125.0,
-      "latency_p99_ms": 125.0,
-      "queue_p95_ms": 94.0000000409782,
-      "python_retained_bytes": 338799,
-      "python_peak_bytes": 375549,
-      "status_counts": {
-        "COMPLETED": 128
       },
       "devices": [
         {
@@ -844,6 +725,125 @@
           "cuda_capability": null,
           "runtime": "python",
           "reserved_memory_mb": 0,
+          "active": 1
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "name": "B_multiple_interactive",
+        "clients": 8,
+        "profile": "latency_first",
+        "fail": false,
+        "deadline": false,
+        "mixed": false
+      },
+      "repeat": 1,
+      "configuration": {
+        "schema_version": "1",
+        "scheduler": {
+          "queue_limit": 128,
+          "max_inflight": 32,
+          "history_limit": 8,
+          "history_ttl_seconds": 300.0,
+          "poll_seconds": 0.01,
+          "aging_seconds": 0.1,
+          "max_request_seconds": 60.0,
+          "shutdown_grace_seconds": 10.0,
+          "max_input_bytes": 1048576,
+          "max_output_bytes": 1048576
+        },
+        "devices": [
+          {
+            "id": "cpu",
+            "memory_mb": null,
+            "max_concurrency": 4
+          }
+        ],
+        "backends": [
+          {
+            "id": "synthetic",
+            "kind": "mock",
+            "device": "cpu",
+            "concurrency": 2,
+            "model_memory_mb": 0,
+            "request_memory_mb": 0,
+            "max_restarts": 1,
+            "options": {
+              "delay_seconds": 0.001,
+              "fail": false
+            }
+          }
+        ],
+        "profiles": {
+          "latency_first": {
+            "name": "latency_first",
+            "max_batch_size": 1,
+            "batch_delay_ms": 0.0,
+            "cost_budget": 16384,
+            "priority_boost": 20
+          },
+          "balanced": {
+            "name": "balanced",
+            "max_batch_size": 4,
+            "batch_delay_ms": 2.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          },
+          "throughput_first": {
+            "name": "throughput_first",
+            "max_batch_size": 16,
+            "batch_delay_ms": 5.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          }
+        },
+        "routing": {
+          "rules": {}
+        },
+        "tenants": [],
+        "api": {
+          "host": "127.0.0.1",
+          "port": 8000,
+          "max_body_bytes": 1048576,
+          "max_concurrent_requests": 64,
+          "max_batch_tasks": 64,
+          "request_timeout_seconds": 65.0,
+          "docs_enabled": false
+        },
+        "telemetry": {
+          "structured_logs": false,
+          "tracing": false,
+          "metadata_sqlite": null,
+          "audit_retention": 10000
+        },
+        "plugins": [],
+        "trusted_plugin_allowlist": []
+      },
+      "correct": true,
+      "seconds": 1.0847628000192344,
+      "requests_per_second": 117.99814668951625,
+      "completed_per_second": 117.99814668951625,
+      "latency_p50_ms": 62.99999984912574,
+      "latency_p95_ms": 93.99999980814755,
+      "latency_p99_ms": 109.00000017136335,
+      "queue_p95_ms": 72.7500000153667,
+      "python_retained_bytes": 335959,
+      "python_peak_bytes": 372813,
+      "status_counts": {
+        "COMPLETED": 128
+      },
+      "devices": [
+        {
+          "id": "cpu",
+          "identity": "host-cpu",
+          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+          "memory_mb": 19557,
+          "max_concurrency": 4,
+          "healthy": true,
+          "cuda_capability": null,
+          "runtime": "python",
+          "reserved_memory_mb": 0,
           "active": 0
         }
       ]
@@ -940,15 +940,15 @@
         "trusted_plugin_allowlist": []
       },
       "correct": true,
-      "seconds": 1.2237584998365492,
-      "requests_per_second": 104.59580057429326,
-      "completed_per_second": 104.59580057429326,
+      "seconds": 1.0355791000183672,
+      "requests_per_second": 123.60233998323235,
+      "completed_per_second": 123.60233998323235,
       "latency_p50_ms": 62.99999984912574,
-      "latency_p95_ms": 119.75000003585579,
-      "latency_p99_ms": 125.0,
-      "queue_p95_ms": 93.99999980814755,
-      "python_retained_bytes": 324415,
-      "python_peak_bytes": 361229,
+      "latency_p95_ms": 77.9999999795109,
+      "latency_p99_ms": 93.73000005958602,
+      "queue_p95_ms": 56.75000010523932,
+      "python_retained_bytes": 324543,
+      "python_peak_bytes": 362221,
       "status_counts": {
         "COMPLETED": 128
       },
@@ -957,7 +957,7 @@
           "id": "cpu",
           "identity": "host-cpu",
           "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19606,
+          "memory_mb": 19555,
           "max_concurrency": 4,
           "healthy": true,
           "cuda_capability": null,
@@ -1059,15 +1059,15 @@
         "trusted_plugin_allowlist": []
       },
       "correct": true,
-      "seconds": 1.0071745000313967,
-      "requests_per_second": 127.08820566447011,
-      "completed_per_second": 127.08820566447011,
+      "seconds": 1.2221833998337388,
+      "requests_per_second": 104.73059936619384,
+      "completed_per_second": 104.73059936619384,
       "latency_p50_ms": 125.0,
-      "latency_p95_ms": 125.0,
-      "latency_p99_ms": 125.0,
-      "queue_p95_ms": 110.00000010244548,
-      "python_retained_bytes": 346783,
-      "python_peak_bytes": 409061,
+      "latency_p95_ms": 234.00000017136335,
+      "latency_p99_ms": 260.94999992521485,
+      "queue_p95_ms": 212.75000006426114,
+      "python_retained_bytes": 346423,
+      "python_peak_bytes": 411617,
       "status_counts": {
         "COMPLETED": 128
       },
@@ -1076,7 +1076,7 @@
           "id": "cpu",
           "identity": "host-cpu",
           "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19601,
+          "memory_mb": 19555,
           "max_concurrency": 4,
           "healthy": true,
           "cuda_capability": null,
@@ -1178,15 +1178,15 @@
         "trusted_plugin_allowlist": []
       },
       "correct": true,
-      "seconds": 0.9994693000335246,
-      "requests_per_second": 128.06796566508504,
+      "seconds": 1.0068067000247538,
+      "requests_per_second": 127.13463269250487,
       "completed_per_second": 0.0,
       "latency_p50_ms": 62.00000015087426,
       "latency_p95_ms": 63.00000008195639,
       "latency_p99_ms": 63.00000008195639,
       "queue_p95_ms": 47.0000000204891,
-      "python_retained_bytes": 427630,
-      "python_peak_bytes": 538509,
+      "python_retained_bytes": 398768,
+      "python_peak_bytes": 534045,
       "status_counts": {
         "FAILED": 128
       },
@@ -1195,7 +1195,7 @@
           "id": "cpu",
           "identity": "host-cpu",
           "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19619,
+          "memory_mb": 19559,
           "max_concurrency": 4,
           "healthy": true,
           "cuda_capability": null,
@@ -1297,967 +1297,15 @@
         "trusted_plugin_allowlist": []
       },
       "correct": true,
-      "seconds": 0.9944585000630468,
-      "requests_per_second": 128.7132645473743,
-      "completed_per_second": 128.7132645473743,
-      "latency_p50_ms": 62.00000015087426,
-      "latency_p95_ms": 63.00000008195639,
-      "latency_p99_ms": 63.00000008195639,
-      "queue_p95_ms": 47.0000000204891,
-      "python_retained_bytes": 336159,
-      "python_peak_bytes": 372765,
-      "status_counts": {
-        "COMPLETED": 128
-      },
-      "devices": [
-        {
-          "id": "cpu",
-          "identity": "host-cpu",
-          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19621,
-          "max_concurrency": 4,
-          "healthy": true,
-          "cuda_capability": null,
-          "runtime": "python",
-          "reserved_memory_mb": 0,
-          "active": 0
-        }
-      ]
-    },
-    {
-      "scenario": {
-        "name": "F_deadlines",
-        "clients": 4,
-        "profile": "latency_first",
-        "fail": false,
-        "deadline": true,
-        "mixed": false
-      },
-      "repeat": 2,
-      "configuration": {
-        "schema_version": "1",
-        "scheduler": {
-          "queue_limit": 128,
-          "max_inflight": 32,
-          "history_limit": 8,
-          "history_ttl_seconds": 300.0,
-          "poll_seconds": 0.01,
-          "aging_seconds": 0.1,
-          "max_request_seconds": 60.0,
-          "shutdown_grace_seconds": 10.0,
-          "max_input_bytes": 1048576,
-          "max_output_bytes": 1048576
-        },
-        "devices": [
-          {
-            "id": "cpu",
-            "memory_mb": null,
-            "max_concurrency": 4
-          }
-        ],
-        "backends": [
-          {
-            "id": "synthetic",
-            "kind": "mock",
-            "device": "cpu",
-            "concurrency": 2,
-            "model_memory_mb": 0,
-            "request_memory_mb": 0,
-            "max_restarts": 1,
-            "options": {
-              "delay_seconds": 0.01,
-              "fail": false
-            }
-          }
-        ],
-        "profiles": {
-          "latency_first": {
-            "name": "latency_first",
-            "max_batch_size": 1,
-            "batch_delay_ms": 0.0,
-            "cost_budget": 16384,
-            "priority_boost": 20
-          },
-          "balanced": {
-            "name": "balanced",
-            "max_batch_size": 4,
-            "batch_delay_ms": 2.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          },
-          "throughput_first": {
-            "name": "throughput_first",
-            "max_batch_size": 16,
-            "batch_delay_ms": 5.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          }
-        },
-        "routing": {
-          "rules": {}
-        },
-        "tenants": [],
-        "api": {
-          "host": "127.0.0.1",
-          "port": 8000,
-          "max_body_bytes": 1048576,
-          "max_concurrent_requests": 64,
-          "max_batch_tasks": 64,
-          "request_timeout_seconds": 65.0,
-          "docs_enabled": false
-        },
-        "telemetry": {
-          "structured_logs": false,
-          "tracing": false,
-          "metadata_sqlite": null,
-          "audit_retention": 10000
-        },
-        "plugins": [],
-        "trusted_plugin_allowlist": []
-      },
-      "correct": true,
-      "seconds": 0.4796831998974085,
-      "requests_per_second": 266.8427829604535,
-      "completed_per_second": 0.0,
-      "latency_p50_ms": 15.999999828636646,
-      "latency_p95_ms": 16.00000006146729,
-      "latency_p99_ms": 16.00000006146729,
-      "queue_p95_ms": 16.00000006146729,
-      "python_retained_bytes": 492848,
-      "python_peak_bytes": 530005,
-      "status_counts": {
-        "TIMED_OUT": 128
-      },
-      "devices": [
-        {
-          "id": "cpu",
-          "identity": "host-cpu",
-          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19620,
-          "max_concurrency": 4,
-          "healthy": true,
-          "cuda_capability": null,
-          "runtime": "python",
-          "reserved_memory_mb": 0,
-          "active": 2
-        }
-      ]
-    },
-    {
-      "scenario": {
-        "name": "G_repeated_memory",
-        "clients": 8,
-        "profile": "balanced",
-        "fail": false,
-        "deadline": false,
-        "mixed": false
-      },
-      "repeat": 2,
-      "configuration": {
-        "schema_version": "1",
-        "scheduler": {
-          "queue_limit": 128,
-          "max_inflight": 32,
-          "history_limit": 8,
-          "history_ttl_seconds": 300.0,
-          "poll_seconds": 0.01,
-          "aging_seconds": 0.1,
-          "max_request_seconds": 60.0,
-          "shutdown_grace_seconds": 10.0,
-          "max_input_bytes": 1048576,
-          "max_output_bytes": 1048576
-        },
-        "devices": [
-          {
-            "id": "cpu",
-            "memory_mb": null,
-            "max_concurrency": 4
-          }
-        ],
-        "backends": [
-          {
-            "id": "synthetic",
-            "kind": "mock",
-            "device": "cpu",
-            "concurrency": 2,
-            "model_memory_mb": 0,
-            "request_memory_mb": 0,
-            "max_restarts": 1,
-            "options": {
-              "delay_seconds": 0.001,
-              "fail": false
-            }
-          }
-        ],
-        "profiles": {
-          "latency_first": {
-            "name": "latency_first",
-            "max_batch_size": 1,
-            "batch_delay_ms": 0.0,
-            "cost_budget": 16384,
-            "priority_boost": 20
-          },
-          "balanced": {
-            "name": "balanced",
-            "max_batch_size": 4,
-            "batch_delay_ms": 2.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          },
-          "throughput_first": {
-            "name": "throughput_first",
-            "max_batch_size": 16,
-            "batch_delay_ms": 5.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          }
-        },
-        "routing": {
-          "rules": {}
-        },
-        "tenants": [],
-        "api": {
-          "host": "127.0.0.1",
-          "port": 8000,
-          "max_body_bytes": 1048576,
-          "max_concurrent_requests": 64,
-          "max_batch_tasks": 64,
-          "request_timeout_seconds": 65.0,
-          "docs_enabled": false
-        },
-        "telemetry": {
-          "structured_logs": false,
-          "tracing": false,
-          "metadata_sqlite": null,
-          "audit_retention": 10000
-        },
-        "plugins": [],
-        "trusted_plugin_allowlist": []
-      },
-      "correct": true,
-      "seconds": 1.0263966000638902,
-      "requests_per_second": 124.70812938393635,
-      "completed_per_second": 124.70812938393635,
-      "latency_p50_ms": 62.99999984912574,
-      "latency_p95_ms": 63.00000008195639,
-      "latency_p99_ms": 88.95000007469213,
-      "queue_p95_ms": 47.0000000204891,
-      "python_retained_bytes": 337855,
-      "python_peak_bytes": 376445,
-      "status_counts": {
-        "COMPLETED": 128
-      },
-      "devices": [
-        {
-          "id": "cpu",
-          "identity": "host-cpu",
-          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19621,
-          "max_concurrency": 4,
-          "healthy": true,
-          "cuda_capability": null,
-          "runtime": "python",
-          "reserved_memory_mb": 0,
-          "active": 0
-        }
-      ]
-    },
-    {
-      "scenario": {
-        "name": "A_single_interactive",
-        "clients": 1,
-        "profile": "latency_first",
-        "fail": false,
-        "deadline": false,
-        "mixed": false
-      },
-      "repeat": 2,
-      "configuration": {
-        "schema_version": "1",
-        "scheduler": {
-          "queue_limit": 128,
-          "max_inflight": 32,
-          "history_limit": 8,
-          "history_ttl_seconds": 300.0,
-          "poll_seconds": 0.01,
-          "aging_seconds": 0.1,
-          "max_request_seconds": 60.0,
-          "shutdown_grace_seconds": 10.0,
-          "max_input_bytes": 1048576,
-          "max_output_bytes": 1048576
-        },
-        "devices": [
-          {
-            "id": "cpu",
-            "memory_mb": null,
-            "max_concurrency": 4
-          }
-        ],
-        "backends": [
-          {
-            "id": "synthetic",
-            "kind": "mock",
-            "device": "cpu",
-            "concurrency": 2,
-            "model_memory_mb": 0,
-            "request_memory_mb": 0,
-            "max_restarts": 1,
-            "options": {
-              "delay_seconds": 0.001,
-              "fail": false
-            }
-          }
-        ],
-        "profiles": {
-          "latency_first": {
-            "name": "latency_first",
-            "max_batch_size": 1,
-            "batch_delay_ms": 0.0,
-            "cost_budget": 16384,
-            "priority_boost": 20
-          },
-          "balanced": {
-            "name": "balanced",
-            "max_batch_size": 4,
-            "batch_delay_ms": 2.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          },
-          "throughput_first": {
-            "name": "throughput_first",
-            "max_batch_size": 16,
-            "batch_delay_ms": 5.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          }
-        },
-        "routing": {
-          "rules": {}
-        },
-        "tenants": [],
-        "api": {
-          "host": "127.0.0.1",
-          "port": 8000,
-          "max_body_bytes": 1048576,
-          "max_concurrent_requests": 64,
-          "max_batch_tasks": 64,
-          "request_timeout_seconds": 65.0,
-          "docs_enabled": false
-        },
-        "telemetry": {
-          "structured_logs": false,
-          "tracing": false,
-          "metadata_sqlite": null,
-          "audit_retention": 10000
-        },
-        "plugins": [],
-        "trusted_plugin_allowlist": []
-      },
-      "correct": true,
-      "seconds": 2.0505029999185354,
-      "requests_per_second": 62.42370774638483,
-      "completed_per_second": 62.42370774638483,
-      "latency_p50_ms": 15.999999828636646,
-      "latency_p95_ms": 16.00000006146729,
-      "latency_p99_ms": 30.999999959021807,
-      "queue_p95_ms": 0.0,
-      "python_retained_bytes": 329403,
-      "python_peak_bytes": 338268,
-      "status_counts": {
-        "COMPLETED": 128
-      },
-      "devices": [
-        {
-          "id": "cpu",
-          "identity": "host-cpu",
-          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19623,
-          "max_concurrency": 4,
-          "healthy": true,
-          "cuda_capability": null,
-          "runtime": "python",
-          "reserved_memory_mb": 0,
-          "active": 0
-        }
-      ]
-    },
-    {
-      "scenario": {
-        "name": "C_bulk",
-        "clients": 16,
-        "profile": "throughput_first",
-        "fail": false,
-        "deadline": false,
-        "mixed": false
-      },
-      "repeat": 3,
-      "configuration": {
-        "schema_version": "1",
-        "scheduler": {
-          "queue_limit": 128,
-          "max_inflight": 32,
-          "history_limit": 8,
-          "history_ttl_seconds": 300.0,
-          "poll_seconds": 0.01,
-          "aging_seconds": 0.1,
-          "max_request_seconds": 60.0,
-          "shutdown_grace_seconds": 10.0,
-          "max_input_bytes": 1048576,
-          "max_output_bytes": 1048576
-        },
-        "devices": [
-          {
-            "id": "cpu",
-            "memory_mb": null,
-            "max_concurrency": 4
-          }
-        ],
-        "backends": [
-          {
-            "id": "synthetic",
-            "kind": "mock",
-            "device": "cpu",
-            "concurrency": 2,
-            "model_memory_mb": 0,
-            "request_memory_mb": 0,
-            "max_restarts": 1,
-            "options": {
-              "delay_seconds": 0.001,
-              "fail": false
-            }
-          }
-        ],
-        "profiles": {
-          "latency_first": {
-            "name": "latency_first",
-            "max_batch_size": 1,
-            "batch_delay_ms": 0.0,
-            "cost_budget": 16384,
-            "priority_boost": 20
-          },
-          "balanced": {
-            "name": "balanced",
-            "max_batch_size": 4,
-            "batch_delay_ms": 2.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          },
-          "throughput_first": {
-            "name": "throughput_first",
-            "max_batch_size": 16,
-            "batch_delay_ms": 5.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          }
-        },
-        "routing": {
-          "rules": {}
-        },
-        "tenants": [],
-        "api": {
-          "host": "127.0.0.1",
-          "port": 8000,
-          "max_body_bytes": 1048576,
-          "max_concurrent_requests": 64,
-          "max_batch_tasks": 64,
-          "request_timeout_seconds": 65.0,
-          "docs_enabled": false
-        },
-        "telemetry": {
-          "structured_logs": false,
-          "tracing": false,
-          "metadata_sqlite": null,
-          "audit_retention": 10000
-        },
-        "plugins": [],
-        "trusted_plugin_allowlist": []
-      },
-      "correct": true,
-      "seconds": 1.0255130999721587,
-      "requests_per_second": 124.81556793713804,
-      "completed_per_second": 124.81556793713804,
-      "latency_p50_ms": 125.0,
-      "latency_p95_ms": 125.0,
-      "latency_p99_ms": 151.68000000528997,
-      "queue_p95_ms": 110.00000010244548,
-      "python_retained_bytes": 346079,
-      "python_peak_bytes": 408485,
-      "status_counts": {
-        "COMPLETED": 128
-      },
-      "devices": [
-        {
-          "id": "cpu",
-          "identity": "host-cpu",
-          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19658,
-          "max_concurrency": 4,
-          "healthy": true,
-          "cuda_capability": null,
-          "runtime": "python",
-          "reserved_memory_mb": 0,
-          "active": 0
-        }
-      ]
-    },
-    {
-      "scenario": {
-        "name": "F_deadlines",
-        "clients": 4,
-        "profile": "latency_first",
-        "fail": false,
-        "deadline": true,
-        "mixed": false
-      },
-      "repeat": 3,
-      "configuration": {
-        "schema_version": "1",
-        "scheduler": {
-          "queue_limit": 128,
-          "max_inflight": 32,
-          "history_limit": 8,
-          "history_ttl_seconds": 300.0,
-          "poll_seconds": 0.01,
-          "aging_seconds": 0.1,
-          "max_request_seconds": 60.0,
-          "shutdown_grace_seconds": 10.0,
-          "max_input_bytes": 1048576,
-          "max_output_bytes": 1048576
-        },
-        "devices": [
-          {
-            "id": "cpu",
-            "memory_mb": null,
-            "max_concurrency": 4
-          }
-        ],
-        "backends": [
-          {
-            "id": "synthetic",
-            "kind": "mock",
-            "device": "cpu",
-            "concurrency": 2,
-            "model_memory_mb": 0,
-            "request_memory_mb": 0,
-            "max_restarts": 1,
-            "options": {
-              "delay_seconds": 0.01,
-              "fail": false
-            }
-          }
-        ],
-        "profiles": {
-          "latency_first": {
-            "name": "latency_first",
-            "max_batch_size": 1,
-            "batch_delay_ms": 0.0,
-            "cost_budget": 16384,
-            "priority_boost": 20
-          },
-          "balanced": {
-            "name": "balanced",
-            "max_batch_size": 4,
-            "batch_delay_ms": 2.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          },
-          "throughput_first": {
-            "name": "throughput_first",
-            "max_batch_size": 16,
-            "batch_delay_ms": 5.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          }
-        },
-        "routing": {
-          "rules": {}
-        },
-        "tenants": [],
-        "api": {
-          "host": "127.0.0.1",
-          "port": 8000,
-          "max_body_bytes": 1048576,
-          "max_concurrent_requests": 64,
-          "max_batch_tasks": 64,
-          "request_timeout_seconds": 65.0,
-          "docs_enabled": false
-        },
-        "telemetry": {
-          "structured_logs": false,
-          "tracing": false,
-          "metadata_sqlite": null,
-          "audit_retention": 10000
-        },
-        "plugins": [],
-        "trusted_plugin_allowlist": []
-      },
-      "correct": true,
-      "seconds": 0.47999739996157587,
-      "requests_per_second": 266.6681111402822,
-      "completed_per_second": 0.0,
-      "latency_p50_ms": 15.999999828636646,
-      "latency_p95_ms": 16.00000006146729,
-      "latency_p99_ms": 16.00000006146729,
-      "queue_p95_ms": 16.00000006146729,
-      "python_retained_bytes": 492458,
-      "python_peak_bytes": 501691,
-      "status_counts": {
-        "TIMED_OUT": 128
-      },
-      "devices": [
-        {
-          "id": "cpu",
-          "identity": "host-cpu",
-          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19662,
-          "max_concurrency": 4,
-          "healthy": true,
-          "cuda_capability": null,
-          "runtime": "python",
-          "reserved_memory_mb": 0,
-          "active": 2
-        }
-      ]
-    },
-    {
-      "scenario": {
-        "name": "A_single_interactive",
-        "clients": 1,
-        "profile": "latency_first",
-        "fail": false,
-        "deadline": false,
-        "mixed": false
-      },
-      "repeat": 3,
-      "configuration": {
-        "schema_version": "1",
-        "scheduler": {
-          "queue_limit": 128,
-          "max_inflight": 32,
-          "history_limit": 8,
-          "history_ttl_seconds": 300.0,
-          "poll_seconds": 0.01,
-          "aging_seconds": 0.1,
-          "max_request_seconds": 60.0,
-          "shutdown_grace_seconds": 10.0,
-          "max_input_bytes": 1048576,
-          "max_output_bytes": 1048576
-        },
-        "devices": [
-          {
-            "id": "cpu",
-            "memory_mb": null,
-            "max_concurrency": 4
-          }
-        ],
-        "backends": [
-          {
-            "id": "synthetic",
-            "kind": "mock",
-            "device": "cpu",
-            "concurrency": 2,
-            "model_memory_mb": 0,
-            "request_memory_mb": 0,
-            "max_restarts": 1,
-            "options": {
-              "delay_seconds": 0.001,
-              "fail": false
-            }
-          }
-        ],
-        "profiles": {
-          "latency_first": {
-            "name": "latency_first",
-            "max_batch_size": 1,
-            "batch_delay_ms": 0.0,
-            "cost_budget": 16384,
-            "priority_boost": 20
-          },
-          "balanced": {
-            "name": "balanced",
-            "max_batch_size": 4,
-            "batch_delay_ms": 2.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          },
-          "throughput_first": {
-            "name": "throughput_first",
-            "max_batch_size": 16,
-            "batch_delay_ms": 5.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          }
-        },
-        "routing": {
-          "rules": {}
-        },
-        "tenants": [],
-        "api": {
-          "host": "127.0.0.1",
-          "port": 8000,
-          "max_body_bytes": 1048576,
-          "max_concurrent_requests": 64,
-          "max_batch_tasks": 64,
-          "request_timeout_seconds": 65.0,
-          "docs_enabled": false
-        },
-        "telemetry": {
-          "structured_logs": false,
-          "tracing": false,
-          "metadata_sqlite": null,
-          "audit_retention": 10000
-        },
-        "plugins": [],
-        "trusted_plugin_allowlist": []
-      },
-      "correct": true,
-      "seconds": 2.047389500075951,
-      "requests_per_second": 62.51863653459766,
-      "completed_per_second": 62.51863653459766,
-      "latency_p50_ms": 15.999999828636646,
-      "latency_p95_ms": 16.00000006146729,
-      "latency_p99_ms": 30.999999959021807,
-      "queue_p95_ms": 0.0,
-      "python_retained_bytes": 321201,
-      "python_peak_bytes": 330066,
-      "status_counts": {
-        "COMPLETED": 128
-      },
-      "devices": [
-        {
-          "id": "cpu",
-          "identity": "host-cpu",
-          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19665,
-          "max_concurrency": 4,
-          "healthy": true,
-          "cuda_capability": null,
-          "runtime": "python",
-          "reserved_memory_mb": 0,
-          "active": 0
-        }
-      ]
-    },
-    {
-      "scenario": {
-        "name": "D_mixed",
-        "clients": 8,
-        "profile": "latency_first",
-        "fail": false,
-        "deadline": false,
-        "mixed": true
-      },
-      "repeat": 3,
-      "configuration": {
-        "schema_version": "1",
-        "scheduler": {
-          "queue_limit": 128,
-          "max_inflight": 32,
-          "history_limit": 8,
-          "history_ttl_seconds": 300.0,
-          "poll_seconds": 0.01,
-          "aging_seconds": 0.1,
-          "max_request_seconds": 60.0,
-          "shutdown_grace_seconds": 10.0,
-          "max_input_bytes": 1048576,
-          "max_output_bytes": 1048576
-        },
-        "devices": [
-          {
-            "id": "cpu",
-            "memory_mb": null,
-            "max_concurrency": 4
-          }
-        ],
-        "backends": [
-          {
-            "id": "synthetic",
-            "kind": "mock",
-            "device": "cpu",
-            "concurrency": 2,
-            "model_memory_mb": 0,
-            "request_memory_mb": 0,
-            "max_restarts": 1,
-            "options": {
-              "delay_seconds": 0.001,
-              "fail": false
-            }
-          }
-        ],
-        "profiles": {
-          "latency_first": {
-            "name": "latency_first",
-            "max_batch_size": 1,
-            "batch_delay_ms": 0.0,
-            "cost_budget": 16384,
-            "priority_boost": 20
-          },
-          "balanced": {
-            "name": "balanced",
-            "max_batch_size": 4,
-            "batch_delay_ms": 2.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          },
-          "throughput_first": {
-            "name": "throughput_first",
-            "max_batch_size": 16,
-            "batch_delay_ms": 5.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          }
-        },
-        "routing": {
-          "rules": {}
-        },
-        "tenants": [],
-        "api": {
-          "host": "127.0.0.1",
-          "port": 8000,
-          "max_body_bytes": 1048576,
-          "max_concurrent_requests": 64,
-          "max_batch_tasks": 64,
-          "request_timeout_seconds": 65.0,
-          "docs_enabled": false
-        },
-        "telemetry": {
-          "structured_logs": false,
-          "tracing": false,
-          "metadata_sqlite": null,
-          "audit_retention": 10000
-        },
-        "plugins": [],
-        "trusted_plugin_allowlist": []
-      },
-      "correct": true,
-      "seconds": 0.9911668000277132,
-      "requests_per_second": 129.1407258560528,
-      "completed_per_second": 129.1407258560528,
-      "latency_p50_ms": 62.00000015087426,
-      "latency_p95_ms": 63.00000008195639,
-      "latency_p99_ms": 63.00000008195639,
-      "queue_p95_ms": 47.0000000204891,
-      "python_retained_bytes": 337591,
-      "python_peak_bytes": 374405,
-      "status_counts": {
-        "COMPLETED": 128
-      },
-      "devices": [
-        {
-          "id": "cpu",
-          "identity": "host-cpu",
-          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19630,
-          "max_concurrency": 4,
-          "healthy": true,
-          "cuda_capability": null,
-          "runtime": "python",
-          "reserved_memory_mb": 0,
-          "active": 0
-        }
-      ]
-    },
-    {
-      "scenario": {
-        "name": "G_repeated_memory",
-        "clients": 8,
-        "profile": "balanced",
-        "fail": false,
-        "deadline": false,
-        "mixed": false
-      },
-      "repeat": 3,
-      "configuration": {
-        "schema_version": "1",
-        "scheduler": {
-          "queue_limit": 128,
-          "max_inflight": 32,
-          "history_limit": 8,
-          "history_ttl_seconds": 300.0,
-          "poll_seconds": 0.01,
-          "aging_seconds": 0.1,
-          "max_request_seconds": 60.0,
-          "shutdown_grace_seconds": 10.0,
-          "max_input_bytes": 1048576,
-          "max_output_bytes": 1048576
-        },
-        "devices": [
-          {
-            "id": "cpu",
-            "memory_mb": null,
-            "max_concurrency": 4
-          }
-        ],
-        "backends": [
-          {
-            "id": "synthetic",
-            "kind": "mock",
-            "device": "cpu",
-            "concurrency": 2,
-            "model_memory_mb": 0,
-            "request_memory_mb": 0,
-            "max_restarts": 1,
-            "options": {
-              "delay_seconds": 0.001,
-              "fail": false
-            }
-          }
-        ],
-        "profiles": {
-          "latency_first": {
-            "name": "latency_first",
-            "max_batch_size": 1,
-            "batch_delay_ms": 0.0,
-            "cost_budget": 16384,
-            "priority_boost": 20
-          },
-          "balanced": {
-            "name": "balanced",
-            "max_batch_size": 4,
-            "batch_delay_ms": 2.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          },
-          "throughput_first": {
-            "name": "throughput_first",
-            "max_batch_size": 16,
-            "batch_delay_ms": 5.0,
-            "cost_budget": 16384,
-            "priority_boost": 0
-          }
-        },
-        "routing": {
-          "rules": {}
-        },
-        "tenants": [],
-        "api": {
-          "host": "127.0.0.1",
-          "port": 8000,
-          "max_body_bytes": 1048576,
-          "max_concurrent_requests": 64,
-          "max_batch_tasks": 64,
-          "request_timeout_seconds": 65.0,
-          "docs_enabled": false
-        },
-        "telemetry": {
-          "structured_logs": false,
-          "tracing": false,
-          "metadata_sqlite": null,
-          "audit_retention": 10000
-        },
-        "plugins": [],
-        "trusted_plugin_allowlist": []
-      },
-      "correct": true,
-      "seconds": 1.3980339001864195,
-      "requests_per_second": 91.5571503544599,
-      "completed_per_second": 91.5571503544599,
-      "latency_p50_ms": 77.9999999795109,
+      "seconds": 1.4779086001217365,
+      "requests_per_second": 86.6088741817028,
+      "completed_per_second": 86.6088741817028,
+      "latency_p50_ms": 93.00000010989606,
       "latency_p95_ms": 125.0,
       "latency_p99_ms": 125.0,
       "queue_p95_ms": 94.0000000409782,
-      "python_retained_bytes": 336175,
-      "python_peak_bytes": 372989,
+      "python_retained_bytes": 337607,
+      "python_peak_bytes": 373885,
       "status_counts": {
         "COMPLETED": 128
       },
@@ -2266,7 +1314,959 @@
           "id": "cpu",
           "identity": "host-cpu",
           "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19553,
+          "memory_mb": 19560,
+          "max_concurrency": 4,
+          "healthy": true,
+          "cuda_capability": null,
+          "runtime": "python",
+          "reserved_memory_mb": 0,
+          "active": 0
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "name": "F_deadlines",
+        "clients": 4,
+        "profile": "latency_first",
+        "fail": false,
+        "deadline": true,
+        "mixed": false
+      },
+      "repeat": 2,
+      "configuration": {
+        "schema_version": "1",
+        "scheduler": {
+          "queue_limit": 128,
+          "max_inflight": 32,
+          "history_limit": 8,
+          "history_ttl_seconds": 300.0,
+          "poll_seconds": 0.01,
+          "aging_seconds": 0.1,
+          "max_request_seconds": 60.0,
+          "shutdown_grace_seconds": 10.0,
+          "max_input_bytes": 1048576,
+          "max_output_bytes": 1048576
+        },
+        "devices": [
+          {
+            "id": "cpu",
+            "memory_mb": null,
+            "max_concurrency": 4
+          }
+        ],
+        "backends": [
+          {
+            "id": "synthetic",
+            "kind": "mock",
+            "device": "cpu",
+            "concurrency": 2,
+            "model_memory_mb": 0,
+            "request_memory_mb": 0,
+            "max_restarts": 1,
+            "options": {
+              "delay_seconds": 0.01,
+              "fail": false
+            }
+          }
+        ],
+        "profiles": {
+          "latency_first": {
+            "name": "latency_first",
+            "max_batch_size": 1,
+            "batch_delay_ms": 0.0,
+            "cost_budget": 16384,
+            "priority_boost": 20
+          },
+          "balanced": {
+            "name": "balanced",
+            "max_batch_size": 4,
+            "batch_delay_ms": 2.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          },
+          "throughput_first": {
+            "name": "throughput_first",
+            "max_batch_size": 16,
+            "batch_delay_ms": 5.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          }
+        },
+        "routing": {
+          "rules": {}
+        },
+        "tenants": [],
+        "api": {
+          "host": "127.0.0.1",
+          "port": 8000,
+          "max_body_bytes": 1048576,
+          "max_concurrent_requests": 64,
+          "max_batch_tasks": 64,
+          "request_timeout_seconds": 65.0,
+          "docs_enabled": false
+        },
+        "telemetry": {
+          "structured_logs": false,
+          "tracing": false,
+          "metadata_sqlite": null,
+          "audit_retention": 10000
+        },
+        "plugins": [],
+        "trusted_plugin_allowlist": []
+      },
+      "correct": true,
+      "seconds": 0.47681320016272366,
+      "requests_per_second": 268.4489438554071,
+      "completed_per_second": 0.0,
+      "latency_p50_ms": 15.999999828636646,
+      "latency_p95_ms": 16.00000006146729,
+      "latency_p99_ms": 16.00000006146729,
+      "queue_p95_ms": 16.00000006146729,
+      "python_retained_bytes": 514492,
+      "python_peak_bytes": 527112,
+      "status_counts": {
+        "TIMED_OUT": 128
+      },
+      "devices": [
+        {
+          "id": "cpu",
+          "identity": "host-cpu",
+          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+          "memory_mb": 19560,
+          "max_concurrency": 4,
+          "healthy": true,
+          "cuda_capability": null,
+          "runtime": "python",
+          "reserved_memory_mb": 0,
+          "active": 1
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "name": "G_repeated_memory",
+        "clients": 8,
+        "profile": "balanced",
+        "fail": false,
+        "deadline": false,
+        "mixed": false
+      },
+      "repeat": 2,
+      "configuration": {
+        "schema_version": "1",
+        "scheduler": {
+          "queue_limit": 128,
+          "max_inflight": 32,
+          "history_limit": 8,
+          "history_ttl_seconds": 300.0,
+          "poll_seconds": 0.01,
+          "aging_seconds": 0.1,
+          "max_request_seconds": 60.0,
+          "shutdown_grace_seconds": 10.0,
+          "max_input_bytes": 1048576,
+          "max_output_bytes": 1048576
+        },
+        "devices": [
+          {
+            "id": "cpu",
+            "memory_mb": null,
+            "max_concurrency": 4
+          }
+        ],
+        "backends": [
+          {
+            "id": "synthetic",
+            "kind": "mock",
+            "device": "cpu",
+            "concurrency": 2,
+            "model_memory_mb": 0,
+            "request_memory_mb": 0,
+            "max_restarts": 1,
+            "options": {
+              "delay_seconds": 0.001,
+              "fail": false
+            }
+          }
+        ],
+        "profiles": {
+          "latency_first": {
+            "name": "latency_first",
+            "max_batch_size": 1,
+            "batch_delay_ms": 0.0,
+            "cost_budget": 16384,
+            "priority_boost": 20
+          },
+          "balanced": {
+            "name": "balanced",
+            "max_batch_size": 4,
+            "batch_delay_ms": 2.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          },
+          "throughput_first": {
+            "name": "throughput_first",
+            "max_batch_size": 16,
+            "batch_delay_ms": 5.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          }
+        },
+        "routing": {
+          "rules": {}
+        },
+        "tenants": [],
+        "api": {
+          "host": "127.0.0.1",
+          "port": 8000,
+          "max_body_bytes": 1048576,
+          "max_concurrent_requests": 64,
+          "max_batch_tasks": 64,
+          "request_timeout_seconds": 65.0,
+          "docs_enabled": false
+        },
+        "telemetry": {
+          "structured_logs": false,
+          "tracing": false,
+          "metadata_sqlite": null,
+          "audit_retention": 10000
+        },
+        "plugins": [],
+        "trusted_plugin_allowlist": []
+      },
+      "correct": true,
+      "seconds": 1.023203499848023,
+      "requests_per_second": 125.09730470919216,
+      "completed_per_second": 125.09730470919216,
+      "latency_p50_ms": 62.5,
+      "latency_p95_ms": 63.00000008195639,
+      "latency_p99_ms": 89.68000002438208,
+      "queue_p95_ms": 47.0000000204891,
+      "python_retained_bytes": 324159,
+      "python_peak_bytes": 360973,
+      "status_counts": {
+        "COMPLETED": 128
+      },
+      "devices": [
+        {
+          "id": "cpu",
+          "identity": "host-cpu",
+          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+          "memory_mb": 19561,
+          "max_concurrency": 4,
+          "healthy": true,
+          "cuda_capability": null,
+          "runtime": "python",
+          "reserved_memory_mb": 0,
+          "active": 0
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "name": "A_single_interactive",
+        "clients": 1,
+        "profile": "latency_first",
+        "fail": false,
+        "deadline": false,
+        "mixed": false
+      },
+      "repeat": 2,
+      "configuration": {
+        "schema_version": "1",
+        "scheduler": {
+          "queue_limit": 128,
+          "max_inflight": 32,
+          "history_limit": 8,
+          "history_ttl_seconds": 300.0,
+          "poll_seconds": 0.01,
+          "aging_seconds": 0.1,
+          "max_request_seconds": 60.0,
+          "shutdown_grace_seconds": 10.0,
+          "max_input_bytes": 1048576,
+          "max_output_bytes": 1048576
+        },
+        "devices": [
+          {
+            "id": "cpu",
+            "memory_mb": null,
+            "max_concurrency": 4
+          }
+        ],
+        "backends": [
+          {
+            "id": "synthetic",
+            "kind": "mock",
+            "device": "cpu",
+            "concurrency": 2,
+            "model_memory_mb": 0,
+            "request_memory_mb": 0,
+            "max_restarts": 1,
+            "options": {
+              "delay_seconds": 0.001,
+              "fail": false
+            }
+          }
+        ],
+        "profiles": {
+          "latency_first": {
+            "name": "latency_first",
+            "max_batch_size": 1,
+            "batch_delay_ms": 0.0,
+            "cost_budget": 16384,
+            "priority_boost": 20
+          },
+          "balanced": {
+            "name": "balanced",
+            "max_batch_size": 4,
+            "batch_delay_ms": 2.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          },
+          "throughput_first": {
+            "name": "throughput_first",
+            "max_batch_size": 16,
+            "batch_delay_ms": 5.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          }
+        },
+        "routing": {
+          "rules": {}
+        },
+        "tenants": [],
+        "api": {
+          "host": "127.0.0.1",
+          "port": 8000,
+          "max_body_bytes": 1048576,
+          "max_concurrent_requests": 64,
+          "max_batch_tasks": 64,
+          "request_timeout_seconds": 65.0,
+          "docs_enabled": false
+        },
+        "telemetry": {
+          "structured_logs": false,
+          "tracing": false,
+          "metadata_sqlite": null,
+          "audit_retention": 10000
+        },
+        "plugins": [],
+        "trusted_plugin_allowlist": []
+      },
+      "correct": true,
+      "seconds": 2.2046471000649035,
+      "requests_per_second": 58.059178721270975,
+      "completed_per_second": 58.059178721270975,
+      "latency_p50_ms": 15.999999828636646,
+      "latency_p95_ms": 30.999999959021807,
+      "latency_p99_ms": 31.999999890103936,
+      "queue_p95_ms": 15.000000048894435,
+      "python_retained_bytes": 325881,
+      "python_peak_bytes": 334578,
+      "status_counts": {
+        "COMPLETED": 128
+      },
+      "devices": [
+        {
+          "id": "cpu",
+          "identity": "host-cpu",
+          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+          "memory_mb": 19560,
+          "max_concurrency": 4,
+          "healthy": true,
+          "cuda_capability": null,
+          "runtime": "python",
+          "reserved_memory_mb": 0,
+          "active": 0
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "name": "C_bulk",
+        "clients": 16,
+        "profile": "throughput_first",
+        "fail": false,
+        "deadline": false,
+        "mixed": false
+      },
+      "repeat": 3,
+      "configuration": {
+        "schema_version": "1",
+        "scheduler": {
+          "queue_limit": 128,
+          "max_inflight": 32,
+          "history_limit": 8,
+          "history_ttl_seconds": 300.0,
+          "poll_seconds": 0.01,
+          "aging_seconds": 0.1,
+          "max_request_seconds": 60.0,
+          "shutdown_grace_seconds": 10.0,
+          "max_input_bytes": 1048576,
+          "max_output_bytes": 1048576
+        },
+        "devices": [
+          {
+            "id": "cpu",
+            "memory_mb": null,
+            "max_concurrency": 4
+          }
+        ],
+        "backends": [
+          {
+            "id": "synthetic",
+            "kind": "mock",
+            "device": "cpu",
+            "concurrency": 2,
+            "model_memory_mb": 0,
+            "request_memory_mb": 0,
+            "max_restarts": 1,
+            "options": {
+              "delay_seconds": 0.001,
+              "fail": false
+            }
+          }
+        ],
+        "profiles": {
+          "latency_first": {
+            "name": "latency_first",
+            "max_batch_size": 1,
+            "batch_delay_ms": 0.0,
+            "cost_budget": 16384,
+            "priority_boost": 20
+          },
+          "balanced": {
+            "name": "balanced",
+            "max_batch_size": 4,
+            "batch_delay_ms": 2.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          },
+          "throughput_first": {
+            "name": "throughput_first",
+            "max_batch_size": 16,
+            "batch_delay_ms": 5.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          }
+        },
+        "routing": {
+          "rules": {}
+        },
+        "tenants": [],
+        "api": {
+          "host": "127.0.0.1",
+          "port": 8000,
+          "max_body_bytes": 1048576,
+          "max_concurrent_requests": 64,
+          "max_batch_tasks": 64,
+          "request_timeout_seconds": 65.0,
+          "docs_enabled": false
+        },
+        "telemetry": {
+          "structured_logs": false,
+          "tracing": false,
+          "metadata_sqlite": null,
+          "audit_retention": 10000
+        },
+        "plugins": [],
+        "trusted_plugin_allowlist": []
+      },
+      "correct": true,
+      "seconds": 1.0258492999710143,
+      "requests_per_second": 124.77466232478463,
+      "completed_per_second": 124.77466232478463,
+      "latency_p50_ms": 125.0,
+      "latency_p95_ms": 125.0,
+      "latency_p99_ms": 152.67999987350782,
+      "queue_p95_ms": 110.00000010244548,
+      "python_retained_bytes": 346399,
+      "python_peak_bytes": 408805,
+      "status_counts": {
+        "COMPLETED": 128
+      },
+      "devices": [
+        {
+          "id": "cpu",
+          "identity": "host-cpu",
+          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+          "memory_mb": 19475,
+          "max_concurrency": 4,
+          "healthy": true,
+          "cuda_capability": null,
+          "runtime": "python",
+          "reserved_memory_mb": 0,
+          "active": 0
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "name": "F_deadlines",
+        "clients": 4,
+        "profile": "latency_first",
+        "fail": false,
+        "deadline": true,
+        "mixed": false
+      },
+      "repeat": 3,
+      "configuration": {
+        "schema_version": "1",
+        "scheduler": {
+          "queue_limit": 128,
+          "max_inflight": 32,
+          "history_limit": 8,
+          "history_ttl_seconds": 300.0,
+          "poll_seconds": 0.01,
+          "aging_seconds": 0.1,
+          "max_request_seconds": 60.0,
+          "shutdown_grace_seconds": 10.0,
+          "max_input_bytes": 1048576,
+          "max_output_bytes": 1048576
+        },
+        "devices": [
+          {
+            "id": "cpu",
+            "memory_mb": null,
+            "max_concurrency": 4
+          }
+        ],
+        "backends": [
+          {
+            "id": "synthetic",
+            "kind": "mock",
+            "device": "cpu",
+            "concurrency": 2,
+            "model_memory_mb": 0,
+            "request_memory_mb": 0,
+            "max_restarts": 1,
+            "options": {
+              "delay_seconds": 0.01,
+              "fail": false
+            }
+          }
+        ],
+        "profiles": {
+          "latency_first": {
+            "name": "latency_first",
+            "max_batch_size": 1,
+            "batch_delay_ms": 0.0,
+            "cost_budget": 16384,
+            "priority_boost": 20
+          },
+          "balanced": {
+            "name": "balanced",
+            "max_batch_size": 4,
+            "batch_delay_ms": 2.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          },
+          "throughput_first": {
+            "name": "throughput_first",
+            "max_batch_size": 16,
+            "batch_delay_ms": 5.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          }
+        },
+        "routing": {
+          "rules": {}
+        },
+        "tenants": [],
+        "api": {
+          "host": "127.0.0.1",
+          "port": 8000,
+          "max_body_bytes": 1048576,
+          "max_concurrent_requests": 64,
+          "max_batch_tasks": 64,
+          "request_timeout_seconds": 65.0,
+          "docs_enabled": false
+        },
+        "telemetry": {
+          "structured_logs": false,
+          "tracing": false,
+          "metadata_sqlite": null,
+          "audit_retention": 10000
+        },
+        "plugins": [],
+        "trusted_plugin_allowlist": []
+      },
+      "correct": true,
+      "seconds": 0.4645527000539005,
+      "requests_per_second": 275.53386297216355,
+      "completed_per_second": 0.0,
+      "latency_p50_ms": 15.999999828636646,
+      "latency_p95_ms": 16.00000006146729,
+      "latency_p99_ms": 16.00000006146729,
+      "queue_p95_ms": 16.00000006146729,
+      "python_retained_bytes": 428754,
+      "python_peak_bytes": 434083,
+      "status_counts": {
+        "TIMED_OUT": 128
+      },
+      "devices": [
+        {
+          "id": "cpu",
+          "identity": "host-cpu",
+          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+          "memory_mb": 19471,
+          "max_concurrency": 4,
+          "healthy": true,
+          "cuda_capability": null,
+          "runtime": "python",
+          "reserved_memory_mb": 0,
+          "active": 2
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "name": "A_single_interactive",
+        "clients": 1,
+        "profile": "latency_first",
+        "fail": false,
+        "deadline": false,
+        "mixed": false
+      },
+      "repeat": 3,
+      "configuration": {
+        "schema_version": "1",
+        "scheduler": {
+          "queue_limit": 128,
+          "max_inflight": 32,
+          "history_limit": 8,
+          "history_ttl_seconds": 300.0,
+          "poll_seconds": 0.01,
+          "aging_seconds": 0.1,
+          "max_request_seconds": 60.0,
+          "shutdown_grace_seconds": 10.0,
+          "max_input_bytes": 1048576,
+          "max_output_bytes": 1048576
+        },
+        "devices": [
+          {
+            "id": "cpu",
+            "memory_mb": null,
+            "max_concurrency": 4
+          }
+        ],
+        "backends": [
+          {
+            "id": "synthetic",
+            "kind": "mock",
+            "device": "cpu",
+            "concurrency": 2,
+            "model_memory_mb": 0,
+            "request_memory_mb": 0,
+            "max_restarts": 1,
+            "options": {
+              "delay_seconds": 0.001,
+              "fail": false
+            }
+          }
+        ],
+        "profiles": {
+          "latency_first": {
+            "name": "latency_first",
+            "max_batch_size": 1,
+            "batch_delay_ms": 0.0,
+            "cost_budget": 16384,
+            "priority_boost": 20
+          },
+          "balanced": {
+            "name": "balanced",
+            "max_batch_size": 4,
+            "batch_delay_ms": 2.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          },
+          "throughput_first": {
+            "name": "throughput_first",
+            "max_batch_size": 16,
+            "batch_delay_ms": 5.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          }
+        },
+        "routing": {
+          "rules": {}
+        },
+        "tenants": [],
+        "api": {
+          "host": "127.0.0.1",
+          "port": 8000,
+          "max_body_bytes": 1048576,
+          "max_concurrent_requests": 64,
+          "max_batch_tasks": 64,
+          "request_timeout_seconds": 65.0,
+          "docs_enabled": false
+        },
+        "telemetry": {
+          "structured_logs": false,
+          "tracing": false,
+          "metadata_sqlite": null,
+          "audit_retention": 10000
+        },
+        "plugins": [],
+        "trusted_plugin_allowlist": []
+      },
+      "correct": true,
+      "seconds": 2.1051437000278383,
+      "requests_per_second": 60.803450138965495,
+      "completed_per_second": 60.803450138965495,
+      "latency_p50_ms": 15.999999828636646,
+      "latency_p95_ms": 16.00000006146729,
+      "latency_p99_ms": 31.729999908711765,
+      "queue_p95_ms": 0.0,
+      "python_retained_bytes": 326907,
+      "python_peak_bytes": 335772,
+      "status_counts": {
+        "COMPLETED": 128
+      },
+      "devices": [
+        {
+          "id": "cpu",
+          "identity": "host-cpu",
+          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+          "memory_mb": 19483,
+          "max_concurrency": 4,
+          "healthy": true,
+          "cuda_capability": null,
+          "runtime": "python",
+          "reserved_memory_mb": 0,
+          "active": 0
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "name": "D_mixed",
+        "clients": 8,
+        "profile": "latency_first",
+        "fail": false,
+        "deadline": false,
+        "mixed": true
+      },
+      "repeat": 3,
+      "configuration": {
+        "schema_version": "1",
+        "scheduler": {
+          "queue_limit": 128,
+          "max_inflight": 32,
+          "history_limit": 8,
+          "history_ttl_seconds": 300.0,
+          "poll_seconds": 0.01,
+          "aging_seconds": 0.1,
+          "max_request_seconds": 60.0,
+          "shutdown_grace_seconds": 10.0,
+          "max_input_bytes": 1048576,
+          "max_output_bytes": 1048576
+        },
+        "devices": [
+          {
+            "id": "cpu",
+            "memory_mb": null,
+            "max_concurrency": 4
+          }
+        ],
+        "backends": [
+          {
+            "id": "synthetic",
+            "kind": "mock",
+            "device": "cpu",
+            "concurrency": 2,
+            "model_memory_mb": 0,
+            "request_memory_mb": 0,
+            "max_restarts": 1,
+            "options": {
+              "delay_seconds": 0.001,
+              "fail": false
+            }
+          }
+        ],
+        "profiles": {
+          "latency_first": {
+            "name": "latency_first",
+            "max_batch_size": 1,
+            "batch_delay_ms": 0.0,
+            "cost_budget": 16384,
+            "priority_boost": 20
+          },
+          "balanced": {
+            "name": "balanced",
+            "max_batch_size": 4,
+            "batch_delay_ms": 2.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          },
+          "throughput_first": {
+            "name": "throughput_first",
+            "max_batch_size": 16,
+            "batch_delay_ms": 5.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          }
+        },
+        "routing": {
+          "rules": {}
+        },
+        "tenants": [],
+        "api": {
+          "host": "127.0.0.1",
+          "port": 8000,
+          "max_body_bytes": 1048576,
+          "max_concurrent_requests": 64,
+          "max_batch_tasks": 64,
+          "request_timeout_seconds": 65.0,
+          "docs_enabled": false
+        },
+        "telemetry": {
+          "structured_logs": false,
+          "tracing": false,
+          "metadata_sqlite": null,
+          "audit_retention": 10000
+        },
+        "plugins": [],
+        "trusted_plugin_allowlist": []
+      },
+      "correct": true,
+      "seconds": 1.1271951999515295,
+      "requests_per_second": 113.55619683751681,
+      "completed_per_second": 113.55619683751681,
+      "latency_p50_ms": 62.99999984912574,
+      "latency_p95_ms": 108.99999993853271,
+      "latency_p99_ms": 110.00000003958121,
+      "queue_p95_ms": 77.9999999795109,
+      "python_retained_bytes": 337415,
+      "python_peak_bytes": 374669,
+      "status_counts": {
+        "COMPLETED": 128
+      },
+      "devices": [
+        {
+          "id": "cpu",
+          "identity": "host-cpu",
+          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+          "memory_mb": 19489,
+          "max_concurrency": 4,
+          "healthy": true,
+          "cuda_capability": null,
+          "runtime": "python",
+          "reserved_memory_mb": 0,
+          "active": 0
+        }
+      ]
+    },
+    {
+      "scenario": {
+        "name": "G_repeated_memory",
+        "clients": 8,
+        "profile": "balanced",
+        "fail": false,
+        "deadline": false,
+        "mixed": false
+      },
+      "repeat": 3,
+      "configuration": {
+        "schema_version": "1",
+        "scheduler": {
+          "queue_limit": 128,
+          "max_inflight": 32,
+          "history_limit": 8,
+          "history_ttl_seconds": 300.0,
+          "poll_seconds": 0.01,
+          "aging_seconds": 0.1,
+          "max_request_seconds": 60.0,
+          "shutdown_grace_seconds": 10.0,
+          "max_input_bytes": 1048576,
+          "max_output_bytes": 1048576
+        },
+        "devices": [
+          {
+            "id": "cpu",
+            "memory_mb": null,
+            "max_concurrency": 4
+          }
+        ],
+        "backends": [
+          {
+            "id": "synthetic",
+            "kind": "mock",
+            "device": "cpu",
+            "concurrency": 2,
+            "model_memory_mb": 0,
+            "request_memory_mb": 0,
+            "max_restarts": 1,
+            "options": {
+              "delay_seconds": 0.001,
+              "fail": false
+            }
+          }
+        ],
+        "profiles": {
+          "latency_first": {
+            "name": "latency_first",
+            "max_batch_size": 1,
+            "batch_delay_ms": 0.0,
+            "cost_budget": 16384,
+            "priority_boost": 20
+          },
+          "balanced": {
+            "name": "balanced",
+            "max_batch_size": 4,
+            "batch_delay_ms": 2.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          },
+          "throughput_first": {
+            "name": "throughput_first",
+            "max_batch_size": 16,
+            "batch_delay_ms": 5.0,
+            "cost_budget": 16384,
+            "priority_boost": 0
+          }
+        },
+        "routing": {
+          "rules": {}
+        },
+        "tenants": [],
+        "api": {
+          "host": "127.0.0.1",
+          "port": 8000,
+          "max_body_bytes": 1048576,
+          "max_concurrent_requests": 64,
+          "max_batch_tasks": 64,
+          "request_timeout_seconds": 65.0,
+          "docs_enabled": false
+        },
+        "telemetry": {
+          "structured_logs": false,
+          "tracing": false,
+          "metadata_sqlite": null,
+          "audit_retention": 10000
+        },
+        "plugins": [],
+        "trusted_plugin_allowlist": []
+      },
+      "correct": true,
+      "seconds": 1.007769500138238,
+      "requests_per_second": 127.01317114919824,
+      "completed_per_second": 127.01317114919824,
+      "latency_p50_ms": 62.00000015087426,
+      "latency_p95_ms": 63.00000008195639,
+      "latency_p99_ms": 63.00000008195639,
+      "queue_p95_ms": 47.0000000204891,
+      "python_retained_bytes": 336399,
+      "python_peak_bytes": 373005,
+      "status_counts": {
+        "COMPLETED": 128
+      },
+      "devices": [
+        {
+          "id": "cpu",
+          "identity": "host-cpu",
+          "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+          "memory_mb": 19492,
           "max_concurrency": 4,
           "healthy": true,
           "cuda_capability": null,
@@ -2368,15 +2368,15 @@
         "trusted_plugin_allowlist": []
       },
       "correct": true,
-      "seconds": 1.0076150000095367,
-      "requests_per_second": 127.03264639647934,
-      "completed_per_second": 127.03264639647934,
+      "seconds": 0.9929299000650644,
+      "requests_per_second": 128.9114165981027,
+      "completed_per_second": 128.9114165981027,
       "latency_p50_ms": 62.00000015087426,
       "latency_p95_ms": 63.00000008195639,
       "latency_p99_ms": 63.00000008195639,
       "queue_p95_ms": 47.0000000204891,
-      "python_retained_bytes": 336903,
-      "python_peak_bytes": 373717,
+      "python_retained_bytes": 324559,
+      "python_peak_bytes": 361285,
       "status_counts": {
         "COMPLETED": 128
       },
@@ -2385,7 +2385,7 @@
           "id": "cpu",
           "identity": "host-cpu",
           "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19601,
+          "memory_mb": 19385,
           "max_concurrency": 4,
           "healthy": true,
           "cuda_capability": null,
@@ -2487,15 +2487,15 @@
         "trusted_plugin_allowlist": []
       },
       "correct": true,
-      "seconds": 0.9962207002099603,
-      "requests_per_second": 128.48558554647894,
+      "seconds": 0.9982610999140888,
+      "requests_per_second": 128.22296692820726,
       "completed_per_second": 0.0,
       "latency_p50_ms": 62.00000015087426,
       "latency_p95_ms": 63.00000008195639,
       "latency_p99_ms": 63.00000008195639,
       "queue_p95_ms": 47.0000000204891,
-      "python_retained_bytes": 423964,
-      "python_peak_bytes": 590349,
+      "python_retained_bytes": 543444,
+      "python_peak_bytes": 590163,
       "status_counts": {
         "FAILED": 128
       },
@@ -2504,7 +2504,7 @@
           "id": "cpu",
           "identity": "host-cpu",
           "name": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
-          "memory_mb": 19647,
+          "memory_mb": 19381,
           "max_concurrency": 4,
           "healthy": true,
           "cuda_capability": null,

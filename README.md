@@ -2,7 +2,9 @@
 
 A Python execution engine for configurable AI workloads on **one machine**. Use the local SDK or an authenticated HTTP API; both call the same bounded, tenant-aware scheduler. Models and task semantics belong in backends, not the scheduler.
 
-**Status:** working beta foundation. CPU SDK/API, quotas, routing, batching, cancellation, resource accounting and trusted plugins are implemented. GPU placement is tested with mocked inventory; physical CUDA and original ORIS/mmBERT model validation remain pending. See [implementation report](IMPLEMENTATION_REPORT.md).
+**Target:** CPU, CPU + one CUDA GPU, or CPU + multiple CUDA GPUs on one host. Device placement is selected in YAML; SDK and HTTP use the same execution engine. CPU is the portable test environment, not a restriction on deployment.
+
+**Status:** working beta foundation. CPU execution and mocked multi-device scheduling are tested. The optional PyTorch backend contains a real CUDA execution path, but physical CUDA validation requires a GPU host. Its included byte embeddings use random demonstration weights; production models must be supplied by a trusted backend. See [GPU support](GPU.md) and the [implementation report](IMPLEMENTATION_REPORT.md).
 
 ## Quick start — CPU, no server or GPU required
 
@@ -67,6 +69,7 @@ python examples/routing.py              # switch backend through YAML data
 python examples/external_inference.py   # self-contained local HTTP inference server
 python -m examples.custom_plugin        # add a task/backend without Core changes
 python examples/api_clients.py          # two authenticated clients; server must be running
+python examples/gpu.py                  # one CUDA GPU; configs/gpu.yaml
 python examples/multi_gpu.py            # optional PyTorch/CUDA; configs/multi_gpu.yaml
 
 python -m pip install -e '.[dev,http,hardware]'
@@ -85,10 +88,10 @@ CI covers CPU Python 3.11–3.13 on Linux and Windows, with a separate optional-
 - Backends are trusted code in this process. Resource budgets are estimates, not OS or CUDA isolation.
 - Audit SQLite stores bounded metadata only. Execution is in memory, without durable recovery or automatic retries.
 - Streaming returns an explicit unsupported-capability error. Distributed execution, tensor parallelism and a workflow engine are future work.
-- Original source is archived unchanged in [legacy/](legacy/). The new optional adapter uses explicit operator paths and persistent models; missing external code/checkpoints are not supplied.
+- Model-specific experimental code and compatibility adapters are removed. Earlier experiments remain available in Git history; new models integrate through the trusted backend contract.
 
 ## Documentation
 
-[Architecture](ARCHITECTURE.md) · [Configuration](CONFIGURATION.md) · [Backends and plugins](BACKENDS.md) · [API](API.md) · [Security](SECURITY.md) · [Deployment](DEPLOYMENT.md) · [Benchmarking](BENCHMARKING.md) · [Migration and legacy audit](MIGRATION.md) · [Roadmap](ROADMAP.md) · [Implementation report](IMPLEMENTATION_REPORT.md)
+[Architecture](ARCHITECTURE.md) · [GPU support](GPU.md) · [Configuration](CONFIGURATION.md) · [Backends and plugins](BACKENDS.md) · [API](API.md) · [Security](SECURITY.md) · [Deployment](DEPLOYMENT.md) · [Benchmarking](BENCHMARKING.md) · [Migration](MIGRATION.md) · [Roadmap](ROADMAP.md) · [Implementation report](IMPLEMENTATION_REPORT.md)
 
 Apache-2.0. The original repository license is preserved.

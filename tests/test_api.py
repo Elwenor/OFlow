@@ -9,10 +9,39 @@ from fastapi.testclient import TestClient
 
 from oflow import OFlowEngine, TaskRequest, TaskState
 from oflow.api import create_app
-from oflow.config import EngineConfig
+from oflow.config import EngineConfig, load_config
+from oflow.resources import Device
 
 KEY_A = "a" * 40
 KEY_B = "b" * 40
+
+
+def test_gpu_http_config_preserves_device_failure_without_cpu_substitution(monkeypatch):
+    monkeypatch.setenv("OFLOW_ALPHA_API_KEY", KEY_A)
+    monkeypatch.setenv("OFLOW_BETA_API_KEY", KEY_B)
+    config = load_config("configs/gpu.yaml")
+    engine = OFlowEngine(
+        config,
+        inventory=[
+            Device("cpu", "host", "CPU", 1024, 4),
+            Device("cuda:0", "missing", "missing", 1024, 1, healthy=False),
+        ],
+    )
+    with TestClient(create_app(engine=engine)) as client:
+        response = client.post(
+            "/v1/tasks/execute",
+            headers={"Authorization": f"Bearer {KEY_B}"},
+            json={"task": "text.embed", "input": {"text": "gpu request"}},
+        )
+        assert response.status_code == 503
+        assert response.json()["error"]["category"] == "unavailable"
+        assert response.json()["backend"] is None
+        cpu = client.post(
+            "/v1/tasks/execute",
+            headers={"Authorization": f"Bearer {KEY_B}"},
+            json={"task": "text.score", "input": {"text": "cpu request"}},
+        )
+        assert cpu.status_code == 200 and cpu.json()["backend"] == "cpu"
 
 
 @pytest.fixture
