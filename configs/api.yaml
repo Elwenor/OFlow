@@ -1,0 +1,31 @@
+schema_version: "1"
+backends:
+  - id: cpu
+    kind: cpu
+    concurrency: 2
+  - id: mock
+    kind: mock
+    options:
+      delay_seconds: 0.02
+routing:
+  rules:
+    text.score: [cpu, mock]
+tenants:
+  - id: alpha
+    api_key_env: OFLOW_ALPHA_API_KEY
+    concurrency_limit: 4
+    queue_limit: 16
+    max_priority: 20
+    admin: true
+  - id: beta
+    api_key_env: OFLOW_BETA_API_KEY
+    concurrency_limit: 2
+    queue_limit: 8
+    tasks: [text.score]
+    backends: [cpu]
+api:
+  host: 127.0.0.1
+  port: 8000
+  max_body_bytes: 1048576
+  max_batch_tasks: 64
+  max_concurrent_requests: 64

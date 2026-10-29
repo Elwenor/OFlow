@@ -1,0 +1,41 @@
+# Optional toy PyTorch workload. Each entry explicitly creates its own weights.
+schema_version: "1"
+devices:
+  - id: cpu
+    max_concurrency: 4
+  - id: cuda:0
+    memory_mb: 1024
+    max_concurrency: 1
+  - id: cuda:1
+    memory_mb: 1024
+    max_concurrency: 1
+backends:
+  - id: embeddings-gpu0
+    kind: torch_embed
+    device: cuda:0
+    model_memory_mb: 64
+    request_memory_mb: 64
+  - id: embeddings-gpu1
+    kind: torch_embed
+    device: cuda:1
+    model_memory_mb: 64
+    request_memory_mb: 64
+  - id: cpu
+    kind: cpu
+routing:
+  rules:
+    text.embed: [embeddings-gpu0, embeddings-gpu1]
+    text.score: [cpu]
+tenants:
+  - id: alpha
+    api_key_env: OFLOW_ALPHA_API_KEY
+    concurrency_limit: 4
+    queue_limit: 16
+    max_priority: 20
+    admin: true
+  - id: beta
+    api_key_env: OFLOW_BETA_API_KEY
+    concurrency_limit: 2
+    queue_limit: 8
+    tasks: [text.embed, text.score]
+    backends: [embeddings-gpu0, embeddings-gpu1, cpu]
